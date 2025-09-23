@@ -88,8 +88,14 @@ header #nav .nav-button:hover {
 
 /*nav 当前点击后*/
 header #nav .nav-button:active,
-header #nav .nav-button:focus {
+header #nav .nav-button:focus,
+header #nav .nav-button.active {
     color: var(--text-main-color) !important;
     background-color: var(--highlight-color);
     box-shadow: rgba(255, 114, 0, 0.25) 0px 10px 10px 0px;
+}
+
+header #title #left #refresh-button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
